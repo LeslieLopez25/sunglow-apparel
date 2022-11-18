@@ -1,6 +1,6 @@
 import { createContext, useState, useReducer } from "react";
 
-import { createAction } from "../utils/firebase/reducer/reducer.utils.js";
+import { createAction } from "../utils/reducer/reducer.utils.js";
 
 const addCartItem = (cartItems, productToAdd) => {
   const existingCartItem = cartItems.find(
