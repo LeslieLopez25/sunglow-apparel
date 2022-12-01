@@ -4,8 +4,8 @@ import FormInput from "../form-input/form-input.component";
 import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
 
 import {
-  signInWithGooglePopup,
   signInAuthUserWithEmailAndPassword,
+  signInWithGooglePopup,
 } from "../../utils/firebase/firebase.utils";
 
 import { SignInContainer, ButtonsContainer } from "./sign-in-form.styles";
