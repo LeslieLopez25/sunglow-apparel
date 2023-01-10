@@ -1,3 +1,4 @@
+import { User } from "firebase/auth";
 import { USER_ACTION_TYPES } from "./user.types";
 import {
   createAction,
@@ -9,7 +10,6 @@ import {
   UserData,
   AdditionalInformation,
 } from "../../utils/firebase/firebase.utils";
-import { User } from "firebase/auth";
 
 export type CheckUserSession = Action<USER_ACTION_TYPES.CHECK_USER_SESSION>;
 
@@ -94,7 +94,7 @@ export const signUpStart = withMatcher(
 );
 
 export const signUpSuccess = withMatcher(
-  (user: UserData, additionalDetails: AdditionalInformation) =>
+  (user: User, additionalDetails: AdditionalInformation) =>
     createAction(USER_ACTION_TYPES.SIGN_UP_SUCCESS, { user, additionalDetails })
 );
 
