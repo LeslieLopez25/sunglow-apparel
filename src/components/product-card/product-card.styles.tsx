@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ProductCartContainer = styled.div`
+export const ProductCardContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -31,6 +31,25 @@ export const ProductCartContainer = styled.div`
     button {
       opacity: 0.85;
       display: flex;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    button {
+      display: block;
+      opacity: 0.9;
+      min-width: unset;
+      padding: 0 10px;
+    }
+
+    &:hover {
+      img {
+        opacity: unset;
+      }
+
+      button {
+        opacity: unset;
+      }
     }
   }
 `;
