@@ -26,6 +26,6 @@ export const Preview = styled.div`
   @media screen and (max-width: 800px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15px;
+    row-gap: 25px;
   }
 `;
