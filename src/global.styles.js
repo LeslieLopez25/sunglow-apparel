@@ -1,5 +1,8 @@
-body {
-  margin: 0;
+import { createGlobalStyle } from "styled-components";
+
+export const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
   padding: 20px 40px;
   font-family: "Fira Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -23,3 +26,4 @@ a {
 * {
   box-sizing: border-box;
 }
+`;

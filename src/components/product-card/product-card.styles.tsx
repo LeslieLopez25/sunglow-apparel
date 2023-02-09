@@ -46,6 +46,10 @@ export const ProductCardContainer = styled.div`
       img {
         opacity: unset;
       }
+
+      button {
+        opacity: unset;
+      }
     }
   }
 `;
