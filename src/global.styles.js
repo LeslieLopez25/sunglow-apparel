@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
   font-family: "Fira Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #1b1b1b;
 
   @media screen and (max-width: 800px) {
     padding: 10px;
@@ -20,7 +21,7 @@ code {
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 * {
