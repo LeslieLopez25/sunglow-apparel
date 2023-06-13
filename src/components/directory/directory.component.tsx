@@ -15,31 +15,36 @@ const categories: DirectoryCategory[] = [
   {
     id: 1,
     title: "hats",
-    imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
+    imageUrl:
+      "https://images.pexels.com/photos/35185/hats-fedora-hat-manufacture-stack.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     route: "shop/hats",
   },
   {
     id: 2,
     title: "jackets",
-    imageUrl: "https://i.ibb.co/px2tCc3/jackets.png",
+    imageUrl:
+      "https://images.pexels.com/photos/7679725/pexels-photo-7679725.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     route: "shop/jackets",
   },
   {
     id: 3,
     title: "sneakers",
-    imageUrl: "https://i.ibb.co/0jqHpnp/sneakers.png",
+    imageUrl:
+      "https://images.pexels.com/photos/2300334/pexels-photo-2300334.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     route: "shop/sneakers",
   },
   {
     id: 4,
     title: "womens",
-    imageUrl: "https://i.ibb.co/GCCdy8t/womens.png",
+    imageUrl:
+      "https://images.pexels.com/photos/972804/pexels-photo-972804.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     route: "shop/womens",
   },
   {
     id: 5,
     title: "mens",
-    imageUrl: "https://i.ibb.co/R70vBrQ/men.png",
+    imageUrl:
+      "https://images.pexels.com/photos/7679753/pexels-photo-7679753.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     route: "shop/mens",
   },
 ];
