@@ -34,10 +34,15 @@ export const HeaderBlock = styled.div`
       width: 12%;
     }
   }
+
+  span {
+    color: #d97d0c;
+  }
 `;
 
 export const Total = styled.span`
   margin-top: 30px;
   margin-left: auto;
   font-size: 36px;
+  color: #d97d0c;
 `;

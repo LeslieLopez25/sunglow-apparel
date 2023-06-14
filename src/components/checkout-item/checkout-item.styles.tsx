@@ -22,6 +22,7 @@ export const ImageContainer = styled.div`
 
 export const BaseSpan = styled.span`
   width: 23%;
+  color: #d97d0c;
 `;
 
 export const Quantity = styled(BaseSpan)`
@@ -38,5 +39,6 @@ export const Value = styled.span`
 
 export const RemoveButton = styled.div`
   padding-left: 12px;
+  color: #d97d0c;
   cursor: pointer;
 `;
