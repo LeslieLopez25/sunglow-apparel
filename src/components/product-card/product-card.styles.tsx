@@ -65,6 +65,7 @@ export const Footer = styled.div`
 export const Name = styled.span`
   width: 90%;
   margin-bottom: 15px;
+  color: #d97d0c;
 
   @media screen and (max-width: 800px) {
     width: 70%;
@@ -74,6 +75,7 @@ export const Name = styled.span`
 
 export const Price = styled.span`
   width: 10%;
+  color: #d97d0c;
 
   @media screen and (max-width: 800px) {
     font-size: 15px;

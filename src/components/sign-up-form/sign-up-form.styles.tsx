@@ -7,5 +7,10 @@ export const SignUpContainer = styled.div`
 
   h2 {
     margin: 10px 0;
+    color: #d97d0c;
+  }
+
+  span {
+    color: #d97d0c;
   }
 `;
