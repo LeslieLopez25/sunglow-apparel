@@ -4,14 +4,16 @@ const SHOP_DATA = [
     items: [
       {
         id: 1,
-        name: "Brown Brim",
-        imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
+        name: "Orange Fedora",
+        imageUrl:
+          "httpshttps://images.pexels.com/photos/4110472/pexels-photo-4110472.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         price: 25,
       },
       {
         id: 2,
-        name: "Blue Beanie",
-        imageUrl: "https://i.ibb.co/ypkgK0X/blue-beanie.png",
+        name: "Red Beanie",
+        imageUrl:
+          "https://images.pexels.com/photos/7760743/pexels-photo-7760743.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         price: 18,
       },
       {

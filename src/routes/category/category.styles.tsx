@@ -14,6 +14,7 @@ export const CategoryContainer = styled.div`
 `;
 
 export const Title = styled.h2`
+  color: #fec135;
   font-size: 38px;
   margin-bottom: 25px;
   text-align: center;
