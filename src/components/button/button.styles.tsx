@@ -3,15 +3,15 @@ import styled from "styled-components";
 import { SpinnerContainer } from "../spinner/spinner.styles";
 
 export const BaseButton = styled.button`
-  min-width: 165px;
+  min-width: 10.3125rem;
   width: auto;
-  height: 50px;
+  height: 3.125rem;
   letter-spacing: 0.5px;
   line-height: 50px;
-  padding: 0 35px 0 35px;
-  font-size: 15px;
-  background-color: #6f0100;
-  color: #fec135;
+  padding: 0 2.1875rem 0 2.1875rem;
+  font-size: 0.9375rem;
+  background-color: hsl(0.5, 100%, 21.8%);
+  color: hsl(41.8, 99%, 60.2%);
   text-transform: uppercase;
   font-family: "Open Sans Condensed";
   font-weight: bolder;
@@ -22,44 +22,44 @@ export const BaseButton = styled.button`
   align-items: center;
 
   &:hover {
-    background-color: #fec135;
-    color: #6f0100;
-    border: 1px solid #6f0100;
+    background-color: hsl(41.8, 99%, 60.2%);
+    color: hsl(0.5, 100%, 21.8%);
+    border: 1px solid hsl(0.5, 100%, 21.8%);
   }
 
   @media screen and (max-width: 800px) {
-    width: 100px;
+    width: 6.25rem;
   }
 `;
 
 export const GoogleSignInButton = styled(BaseButton)`
-  background-color: #4285f4;
-  color: white;
+  background-color: hsl(217.4, 89%, 60.8%);
+  color: hsl(0, 0%, 100%);
 
   &:hover {
-    background-color: #357ae8;
-    color: black;
+    background-color: hsl(216.9, 79.6%, 55.9%);
+    color: hsl(0, 0%, 0%);
     border: none;
   }
 
-  @media screen and (max-width: 800px) {
-    width: 100px;
+  @media screen and (max-width: 49.8125em) {
+    width: 6.25rem;
   }
 `;
 
 export const InvertedButton = styled(BaseButton)`
-  background-color: #fec135;
-  color: #6f0100;
-  border: 1px solid #6f0100;
+  background-color: hsl(41.8, 99%, 60.2%);
+  color: hsl(0.5, 100%, 21.8%);
+  border: 1px solid hsl(0.5, 100%, 21.8%);
 
   &:hover {
-    background-color: #6f0100;
-    color: #fec135;
+    background-color: hsl(0.5, 100%, 21.8%);
+    color: hsl(41.8, 99%, 60.2%);
     border: none;
   }
 `;
 
 export const ButtonSpinner = styled(SpinnerContainer)`
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
 `;
