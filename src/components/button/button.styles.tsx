@@ -27,7 +27,7 @@ export const BaseButton = styled.button`
     border: 1px solid hsl(0.5, 100%, 21.8%);
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 50em) {
     width: 6.25rem;
   }
 `;
@@ -42,7 +42,7 @@ export const GoogleSignInButton = styled(BaseButton)`
     border: none;
   }
 
-  @media screen and (max-width: 49.8125em) {
+  @media screen and (max-width: 50em) {
     width: 6.25rem;
   }
 `;
