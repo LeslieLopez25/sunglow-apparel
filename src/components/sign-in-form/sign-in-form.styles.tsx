@@ -3,15 +3,15 @@ import styled from "styled-components";
 export const SignInContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 380px;
+  width: 23.75rem;
 
   h2 {
-    margin: 10px 0;
-    color: #d97d0c;
+    margin: 0.625rem 0;
+    color: hsl(33.1, 89.5%, 44.9%);
   }
 
   span {
-    color: #d97d0c;
+    color: hsl(33.1, 89.5%, 44.9%);
   }
 `;
 
@@ -19,14 +19,14 @@ export const ButtonsContainer = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 50em) {
     display: flex;
     justify-content: start;
-    gap: 10px;
+    gap: 0.625rem;
 
     button {
       display: grid;
-      font-size: 12px;
+      font-size: 0.75rem;
       padding: 0;
     }
   }

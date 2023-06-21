@@ -3,20 +3,20 @@ import styled from "styled-components";
 export const SignUpContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 380px;
+  width: 23.75rem;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 50em) {
     position: relative;
-    bottom: 390px;
-    left: 420px;
+    bottom: 24.375rem;
+    left: 26.25rem;
   }
 
   h2 {
-    margin: 10px 0;
-    color: #d97d0c;
+    margin: 0.625rem 0;
+    color: hsl(33.1, 89.5%, 44.9%);
   }
 
   span {
-    color: #d97d0c;
+    color: hsl(33.1, 89.5%, 44.9%);
   }
 `;

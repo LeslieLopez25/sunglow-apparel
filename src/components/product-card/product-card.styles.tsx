@@ -4,7 +4,7 @@ export const ProductCardContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: 350px;
+  height: 21.875rem;
   align-items: center;
   position: relative;
 
@@ -12,14 +12,14 @@ export const ProductCardContainer = styled.div`
     width: 100%;
     height: 95%;
     object-fit: cover;
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem;
   }
 
   button {
     width: 80%;
     opacity: 0.7;
     position: absolute;
-    top: 255px;
+    top: 15.9375rem;
     display: none;
   }
 
@@ -34,12 +34,12 @@ export const ProductCardContainer = styled.div`
     }
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 50em) {
     button {
       display: block;
       opacity: 0.9;
       min-width: unset;
-      padding: 0 10px;
+      padding: 0 0.625rem;
     }
 
     &:hover {
@@ -59,25 +59,25 @@ export const Footer = styled.div`
   height: 5%;
   display: flex;
   justify-content: center;
-  font-size: 18px;
+  font-size: 1.125rem;
 `;
 
 export const Name = styled.span`
   width: 90%;
-  margin-bottom: 15px;
-  color: #d97d0c;
+  margin-bottom: 0.9375rem;
+  color: hsl(33.1, 89.5%, 44.9%);
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 50em) {
     width: 70%;
-    font-size: 15px;
+    font-size: 0.9375rem;
   }
 `;
 
 export const Price = styled.span`
   width: 10%;
-  color: #d97d0c;
+  color: hsl(33.1, 89.5%, 44.9%);
 
-  @media screen and (max-width: 800px) {
-    font-size: 15px;
+  @media screen and (max-width: 50em) {
+    font-size: 0.9375rem;
   }
 `;

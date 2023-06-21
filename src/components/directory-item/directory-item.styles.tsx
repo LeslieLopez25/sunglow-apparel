@@ -13,51 +13,51 @@ export const BackgroundImage = styled.div<BackgroundImageProps>`
 `;
 
 export const Body = styled.div`
-  height: 90px;
-  padding: 0 25px;
+  height: 5.625rem;
+  padding: 0 1.5625rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid #240002;
-  background-color: #d97d0c;
+  border: 1px solid hsl(356.7, 100%, 7.1%);
+  background-color: hsl(33.1, 89.5%, 44.9%);
   opacity: 0.7;
   position: absolute;
 
   h2 {
     font-weight: bold;
-    margin: 0 6px 0;
-    font-size: 22px;
-    color: #6f0100;
+    margin: 0 0.375rem 0;
+    font-size: 1.375rem;
+    color: hsl(0.5, 100%, 21.8%);
     text-transform: uppercase;
   }
 
   p {
     font-weight: lighter;
-    font-size: 16px;
-    color: #240002;
+    font-size: 1rem;
+    color: hsl(356.7, 100%, 7.1%);
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 50em) {
     h2 {
-      font-size: 18px;
+      font-size: 1.125rem;
     }
 
     p {
-      font-size: 14px;
+      font-size: 0.875rem;
     }
   }
 `;
 
 export const DirectoryItemContainer = styled.div`
   min-width: 30%;
-  height: 240px;
+  height: 15rem;
   flex: 1 1 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid black;
-  margin: 0 7.5px 15px;
+  margin: 0 0.46875rem 0.9375rem;
   overflow: hidden;
 
   &:hover {
@@ -74,14 +74,14 @@ export const DirectoryItemContainer = styled.div`
   }
 
   &:first-child {
-    margin-right: 7.5px;
+    margin-right: 0.46875rem;
   }
 
   &:last-child {
-    margin-left: 7.5px;
+    margin-left: 0.46875rem;
   }
 
-  @media screen and (max-width: 800px) {
-    height: 200px;
+  @media screen and (max-width: 50em) {
+    height: 12.5rem;
   }
 `;
