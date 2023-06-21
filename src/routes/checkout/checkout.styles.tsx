@@ -6,19 +6,19 @@ export const CheckoutContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 50px auto 0;
+  margin: 3.125rem auto 0;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 50em) {
     width: 90%;
   }
 `;
 
 export const CheckoutHeader = styled.div`
   width: 100%;
-  padding: 10px 0;
+  padding: 0.625rem 0;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid darkgrey;
+  border-bottom: 1px solid hsl(41.8, 99%, 60.2%);
 `;
 
 export const HeaderBlock = styled.div`
@@ -28,7 +28,7 @@ export const HeaderBlock = styled.div`
     width: 8%;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 50em) {
     width: 22%;
     &:last-child {
       width: 12%;
@@ -36,13 +36,13 @@ export const HeaderBlock = styled.div`
   }
 
   span {
-    color: #d97d0c;
+    color: hsl(33.1, 89.5%, 44.9%);
   }
 `;
 
 export const Total = styled.span`
-  margin-top: 30px;
+  margin-top: 1.875rem;
   margin-left: auto;
-  font-size: 36px;
-  color: #d97d0c;
+  font-size: 2.25rem;
+  color: hsl(33.1, 89.5%, 44.9%);
 `;
