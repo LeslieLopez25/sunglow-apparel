@@ -10,10 +10,10 @@
 
 ### Screenshots
 
-<img src="./assets/screenshot.png" width="400">
-<img src="./assets/screenshot-2.png" width="400">
-<img src="./assets/screenshot-3.png" width="400">
-<img src="./assets/screenshot-4.png" width="400">
+<img src="./src/assets/screenshots/screenshot.png" width="400">
+<img src="./src/assets/screenshots/screenshot-2.png" width="400">
+<img src="./src/assets/screenshots/screenshot-3.png" width="400">
+<img src="./src/assets/screenshots/screenshot-4.png" width="400">
 
 ---
 
