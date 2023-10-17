@@ -25,6 +25,12 @@ export const LogoContainer = styled(Link)`
     position: relative;
     bottom: 1.5625rem;
   }
+
+  @media screen and (max-width: 30em) {
+    width: 2rem;
+    position: relative;
+    bottom: 2rem;
+  }
 `;
 
 export const NavLinks = styled.div`
