@@ -18,18 +18,19 @@ export const LogoContainer = styled(Link)`
   height: 100%;
   width: 4.375rem;
   position: relative;
-  bottom: 0.9375rem;
+  bottom: 1rem;
 
   @media screen and (max-width: 50em) {
     width: 3.125rem;
     position: relative;
-    bottom: 1.5625rem;
+    bottom: 2rem;
   }
 
   @media screen and (max-width: 30em) {
     width: 2rem;
     position: relative;
     bottom: 2rem;
+    right: 20px;
   }
 `;
 
