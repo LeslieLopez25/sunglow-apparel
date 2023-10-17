@@ -30,7 +30,7 @@ export const LogoContainer = styled(Link)`
     width: 2rem;
     position: relative;
     bottom: 2rem;
-    right: 20px;
+    right: 1.25rem;
   }
 `;
 
