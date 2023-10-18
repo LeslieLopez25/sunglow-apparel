@@ -20,7 +20,7 @@ export const SignUpContainer = styled.div`
     color: hsl(33.1, 89.5%, 44.9%);
   }
 
-  /* @media screen and (max-width: 27.625em) {
+  @media screen and (max-width: 27.625em) {
     margin-right: 32rem;
-  } */
+  }
 `;

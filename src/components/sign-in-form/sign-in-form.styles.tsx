@@ -27,9 +27,9 @@ export const SignInContainer = styled.div`
     }
   }
 
-  /* @media screen and (max-width: 27.625em) {
+  @media screen and (max-width: 27.625em) {
     margin-right: 32rem;
-  } */
+  }
 `;
 
 export const ButtonsContainer = styled.div`
