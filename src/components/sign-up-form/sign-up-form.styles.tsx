@@ -20,7 +20,7 @@ export const SignUpContainer = styled.div`
   }
 
   @media screen and (max-width: 34.375em) {
-    margin-right: 15rem;
+    margin-right: 20rem;
   }
 
   @media screen and (max-width: 27.625em) {
