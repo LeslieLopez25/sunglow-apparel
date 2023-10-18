@@ -22,8 +22,7 @@ export const SignInContainer = styled.div`
   }
 
   @media screen and (max-width: 34.375em) {
-    margin: 0 auto;
-    align-self: center;
+    margin-right: 15rem;
   }
 
   @media screen and (max-width: 27.625em) {
