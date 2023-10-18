@@ -27,7 +27,7 @@ export const SignInContainer = styled.div`
     }
   }
 
-  @media screen and (max-width: 34.375rem) {
+  @media screen and (max-width: 34.375em) {
     margin-right: 20rem;
   }
 
