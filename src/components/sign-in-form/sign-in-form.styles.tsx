@@ -16,19 +16,13 @@ export const SignInContainer = styled.div`
   }
 
   @media screen and (max-width: 50em) {
-    /* align-self: center; */
-    /* width: 100%;
-    min-height: 100%;
-    padding: 1rem calc((80vw - 6rem) / 2);
-    margin: 0 auto; */
-
     h2 {
       font-size: 1.2rem;
     }
   }
 
   @media screen and (max-width: 34.375em) {
-    margin-right: 20rem;
+    margin: 0 auto;
   }
 
   @media screen and (max-width: 27.625em) {

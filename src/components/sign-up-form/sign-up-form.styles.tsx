@@ -8,7 +8,6 @@ export const SignUpContainer = styled.div`
 
   @media screen and (max-width: 50em) {
     display: flex;
-    align-self: center;
   }
 
   h2 {
@@ -21,7 +20,7 @@ export const SignUpContainer = styled.div`
   }
 
   @media screen and (max-width: 34.375em) {
-    margin-right: 20rem;
+    margin: 0 auto;
   }
 
   @media screen and (max-width: 27.625em) {
