@@ -13,6 +13,22 @@ export const SignInContainer = styled.div`
   span {
     color: hsl(33.1, 89.5%, 44.9%);
   }
+
+  @media screen and (max-width: 50em) {
+    align-self: center;
+    /* width: 100%;
+    min-height: 100%;
+    padding: 1rem calc((80vw - 6rem) / 2);
+    margin: 0 auto; */
+
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media screen and (max-width: 27.625em) {
+    margin-right: 32rem;
+  }
 `;
 
 export const ButtonsContainer = styled.div`

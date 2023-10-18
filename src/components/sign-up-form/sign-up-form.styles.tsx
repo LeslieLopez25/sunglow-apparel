@@ -6,9 +6,8 @@ export const SignUpContainer = styled.div`
   width: 23.75rem;
 
   @media screen and (max-width: 50em) {
-    position: relative;
-    bottom: 24.375rem;
-    left: 26.25rem;
+    display: flex;
+    align-self: center;
   }
 
   h2 {
@@ -18,5 +17,9 @@ export const SignUpContainer = styled.div`
 
   span {
     color: hsl(33.1, 89.5%, 44.9%);
+  }
+
+  @media screen and (max-width: 27.625em) {
+    margin-right: 32rem;
   }
 `;
