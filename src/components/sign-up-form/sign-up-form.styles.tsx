@@ -21,6 +21,7 @@ export const SignUpContainer = styled.div`
 
   @media screen and (max-width: 34.375em) {
     margin: 0 auto;
+    align-self: center;
   }
 
   @media screen and (max-width: 27.625em) {
