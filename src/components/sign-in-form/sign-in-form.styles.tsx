@@ -4,6 +4,7 @@ export const SignInContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 23.75rem;
+  align-self: center;
 
   h2 {
     margin: 0.625rem 0;
@@ -15,7 +16,7 @@ export const SignInContainer = styled.div`
   }
 
   @media screen and (max-width: 50em) {
-    align-self: center;
+    /* align-self: center; */
     /* width: 100%;
     min-height: 100%;
     padding: 1rem calc((80vw - 6rem) / 2);
@@ -26,9 +27,9 @@ export const SignInContainer = styled.div`
     }
   }
 
-  @media screen and (max-width: 27.625em) {
+  /* @media screen and (max-width: 27.625em) {
     margin-right: 32rem;
-  }
+  } */
 `;
 
 export const ButtonsContainer = styled.div`
