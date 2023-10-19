@@ -14,6 +14,6 @@ export const AuthenticationContainer = styled.div`
   }
 
   @media screen and (max-width: 27.625em) {
-    width: 5rem;
+    max-width: 100%;
   }
 `;
