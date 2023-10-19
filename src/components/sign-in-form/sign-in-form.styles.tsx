@@ -22,11 +22,11 @@ export const SignInContainer = styled.div`
   }
 
   @media screen and (max-width: 34.375em) {
-    margin-right: 20rem;
+    margin: 0 auto;
   }
 
   @media screen and (max-width: 27.625em) {
-    margin-right: 32rem;
+    margin-left: -8rem;
   }
 `;
 

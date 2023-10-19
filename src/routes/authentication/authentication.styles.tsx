@@ -10,5 +10,10 @@ export const AuthenticationContainer = styled.div`
     display: flex;
     flex-direction: column;
     grid-row-gap: 3.125rem;
+    width: 30rem;
+  }
+
+  @media screen and (max-width: 27.625em) {
+    width: 5rem;
   }
 `;
