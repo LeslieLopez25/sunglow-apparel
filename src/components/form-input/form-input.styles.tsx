@@ -50,6 +50,10 @@ export const Input = styled.input`
   @media screen and (max-width: 50em) {
     width: 21.875rem;
   }
+
+  @media screen and (max-width: 27.625em) {
+    width: 21rem;
+  }
 `;
 
 export const Group = styled.div`
