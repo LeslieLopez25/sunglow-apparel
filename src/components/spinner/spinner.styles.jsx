@@ -6,8 +6,11 @@ export const SpinnerOverlay = styled.div`
   align-items: center;
   background-color: hsl(356.7, 100%, 7.1%);
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
   margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
 `;
 
 export const SpinnerContainer = styled.div`
