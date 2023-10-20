@@ -38,6 +38,11 @@ export const HeaderBlock = styled.div`
   span {
     color: hsl(33.1, 89.5%, 44.9%);
   }
+
+  @media screen and (max-width: 27.625em) {
+    font-size: 0.75rem;
+    width: 50%;
+  }
 `;
 
 export const Total = styled.span`
