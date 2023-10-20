@@ -7,12 +7,20 @@ export const PaymentFormContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 27.625em) {
+    min-width: 22.5rem;
+  }
 `;
 
 export const FormContainer = styled.form`
   height: 6.25rem;
   min-width: 31.25rem;
   color: hsl(33.1, 89.5%, 44.9%);
+
+  @media screen and (max-width: 27.625em) {
+    min-width: 100%;
+  }
 `;
 
 export const PaymentButton = styled(Button)`
