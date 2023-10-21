@@ -1,8 +1,24 @@
 <h1>Sunglow Apparel :sunrise:</h1>
 
-<h2>An e-commerce store for clothes created using React, Redux, Typescript, styled-components CSS, Firebase, and Strip.</h2>
+<h2>Sunglow Apparel is a e-commerce platform meticulously crafted using technologies such as React, Redux, TypeScript, styled-components CSS, Firebase, and Stripe.</h2>
 
-<p>This website is responsive and it's built using React, Redux, TypeScript, and styled-components CSS for the frontend. Firebase is used for the backend for authentication and for the database. Redux is used to store the user information, and Stripe is used to make a payment request for the items you want to buy.</p>
+<p>
+Technologies Used:
+
+Sunglow Apparel is powered by a dynamic tech stack that ensures a seamless and user-friendly experience. Here's a glimpse of what makes our platform extraordinary:
+
+- React: Our frontend is developed using React, providing a fast and interactive interface for our users.
+
+- Redux: To enhance user experience, we've integrated Redux to manage user information, making the shopping journey as smooth as silk.
+
+- TypeScript: We've implemented TypeScript to ensure robust code quality and reduce the chances of errors, giving you peace of mind while you shop.
+
+- Styled-components CSS: Our user interface is crafted with styled-components CSS, resulting in a visually stunning and responsive design.
+
+- Firebase: Elegant Attire relies on Firebase for authentication and database services, ensuring the security of your personal information.
+
+- Stripe: When you're ready to make a purchase, our seamless Stripe integration allows you to make secure payment transactions.
+</p>
 
 ### Link
 
