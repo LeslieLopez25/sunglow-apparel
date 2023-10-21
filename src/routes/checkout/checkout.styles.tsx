@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const CheckoutContainer = styled.div`
-  width: 55%;
-  min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 3.125rem auto 0;
+  width: 55%;
+  min-height: 90vh;
 
   @media screen and (max-width: 50em) {
     width: 90%;
@@ -14,16 +14,16 @@ export const CheckoutContainer = styled.div`
 `;
 
 export const CheckoutHeader = styled.div`
-  width: 100%;
-  padding: 0.625rem 0;
   display: flex;
   justify-content: space-between;
+  padding: 0.625rem 0;
+  width: 100%;
   border-bottom: 1px solid hsl(41.8, 99%, 60.2%);
 `;
 
 export const HeaderBlock = styled.div`
-  text-transform: capitalize;
   width: 23%;
+  text-transform: capitalize;
   &:last-child {
     width: 8%;
   }
@@ -46,8 +46,8 @@ export const HeaderBlock = styled.div`
 `;
 
 export const Total = styled.span`
+  color: hsl(33.1, 89.5%, 44.9%);
+  font-size: 2.25rem;
   margin-top: 1.875rem;
   margin-left: auto;
-  font-size: 2.25rem;
-  color: hsl(33.1, 89.5%, 44.9%);
 `;

@@ -3,16 +3,16 @@ import styled from "styled-components";
 export const SignUpContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 23.75rem;
   align-self: center;
+  width: 23.75rem;
 
   @media screen and (max-width: 50em) {
     display: flex;
   }
 
   h2 {
-    margin: 0.625rem 0;
     color: hsl(33.1, 89.5%, 44.9%);
+    margin: 0.625rem 0;
   }
 
   span {

@@ -3,12 +3,12 @@ import styled from "styled-components";
 export const SignInContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 23.75rem;
   align-self: center;
+  width: 23.75rem;
 
   h2 {
-    margin: 0.625rem 0;
     color: hsl(33.1, 89.5%, 44.9%);
+    margin: 0.625rem 0;
   }
 
   span {

@@ -5,37 +5,37 @@ type BackgroundImageProps = {
 };
 
 export const BackgroundImage = styled.div<BackgroundImageProps>`
-  width: 100%;
-  height: 100%;
   background-size: cover;
   background-position: center;
   background-image: ${({ imageUrl }) => `url(${imageUrl})`};
+  width: 100%;
+  height: 100%;
 `;
 
 export const Body = styled.div`
-  height: 5.625rem;
-  padding: 0 1.5625rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  border: 1px solid hsl(356.7, 100%, 7.1%);
+  align-items: center;
   background-color: hsl(33.1, 89.5%, 44.9%);
-  opacity: 0.7;
+  padding: 0 1.5625rem;
+  height: 5.625rem;
   position: absolute;
+  border: 1px solid hsl(356.7, 100%, 7.1%);
+  opacity: 0.7;
 
   h2 {
+    color: hsl(0.5, 100%, 21.8%);
+    font-size: 1.375rem;
     font-weight: bold;
     margin: 0 0.375rem 0;
-    font-size: 1.375rem;
-    color: hsl(0.5, 100%, 21.8%);
     text-transform: uppercase;
   }
 
   p {
-    font-weight: lighter;
-    font-size: 1rem;
     color: hsl(356.7, 100%, 7.1%);
+    font-size: 1rem;
+    font-weight: lighter;
   }
 
   @media screen and (max-width: 50em) {
@@ -50,14 +50,14 @@ export const Body = styled.div`
 `;
 
 export const DirectoryItemContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 auto;
+  margin: 0 0.46875rem 0.9375rem;
   min-width: 30%;
   height: 15rem;
-  flex: 1 1 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border: 1px solid black;
-  margin: 0 0.46875rem 0.9375rem;
   overflow: hidden;
 
   &:hover {

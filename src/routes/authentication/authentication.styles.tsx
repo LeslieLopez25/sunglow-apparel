@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const AuthenticationContainer = styled.div`
   display: flex;
-  width: 56.25rem;
   justify-content: space-between;
   margin: 1.875rem auto;
+  width: 56.25rem;
 
   @media screen and (max-width: 50em) {
     display: flex;

@@ -1,26 +1,26 @@
 import styled from "styled-components";
 
 export const ProductCardContainer = styled.div`
-  width: 100%;
   display: flex;
   flex-direction: column;
-  height: 21.875rem;
   align-items: center;
+  width: 100%;
+  height: 21.875rem;
   position: relative;
 
   img {
+    margin-bottom: 0.3125rem;
     width: 100%;
     height: 95%;
     object-fit: cover;
-    margin-bottom: 0.3125rem;
   }
 
   button {
+    display: none;
     width: 80%;
-    opacity: 0.7;
     position: absolute;
     top: 15.9375rem;
-    display: none;
+    opacity: 0.7;
   }
 
   &:hover {
@@ -29,17 +29,17 @@ export const ProductCardContainer = styled.div`
     }
 
     button {
-      opacity: 0.85;
       display: flex;
+      opacity: 0.85;
     }
   }
 
   @media screen and (max-width: 50em) {
     button {
       display: block;
-      opacity: 0.9;
-      min-width: unset;
       padding: 0 0.625rem;
+      min-width: unset;
+      opacity: 0.9;
     }
 
     &:hover {
@@ -55,27 +55,27 @@ export const ProductCardContainer = styled.div`
 `;
 
 export const Footer = styled.div`
-  width: 100%;
-  height: 5%;
   display: flex;
   justify-content: center;
   font-size: 1.125rem;
+  width: 100%;
+  height: 5%;
 `;
 
 export const Name = styled.span`
-  width: 90%;
-  margin-bottom: 0.9375rem;
   color: hsl(33.1, 89.5%, 44.9%);
+  margin-bottom: 0.9375rem;
+  width: 90%;
 
   @media screen and (max-width: 50em) {
-    width: 70%;
     font-size: 0.9375rem;
+    width: 70%;
   }
 `;
 
 export const Price = styled.span`
-  width: 10%;
   color: hsl(33.1, 89.5%, 44.9%);
+  width: 10%;
 
   @media screen and (max-width: 50em) {
     font-size: 0.9375rem;

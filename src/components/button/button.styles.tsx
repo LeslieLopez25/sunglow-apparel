@@ -3,23 +3,23 @@ import styled from "styled-components";
 import { SpinnerContainer } from "../spinner/spinner.styles";
 
 export const BaseButton = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0.5, 100%, 21.8%);
+  color: hsl(41.8, 99%, 60.2%);
+  font-family: "Open Sans Condensed";
+  font-size: 0.9375rem;
+  font-weight: bolder;
+  padding: 0 2.1875rem 0 2.1875rem;
   min-width: 10.3125rem;
   width: auto;
   height: 3.125rem;
   letter-spacing: 0.5px;
   line-height: 50px;
-  padding: 0 2.1875rem 0 2.1875rem;
-  font-size: 0.9375rem;
-  background-color: hsl(0.5, 100%, 21.8%);
-  color: hsl(41.8, 99%, 60.2%);
   text-transform: uppercase;
-  font-family: "Open Sans Condensed";
-  font-weight: bolder;
   border: none;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   &:hover {
     background-color: hsl(41.8, 99%, 60.2%);

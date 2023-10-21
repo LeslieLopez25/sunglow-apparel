@@ -5,9 +5,9 @@ export const SpinnerOverlay = styled.div`
   justify-content: center;
   align-items: center;
   background-color: hsl(356.7, 100%, 7.1%);
+  margin: 0 auto;
   width: 100vw;
   height: 100vh;
-  margin: 0 auto;
   position: fixed;
   top: 0;
   left: 0;

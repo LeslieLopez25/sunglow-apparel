@@ -1,18 +1,18 @@
 import styled from "styled-components";
 
 export const CheckoutItemContainer = styled.div`
-  width: 100%;
   display: flex;
-  min-height: 6.25rem;
-  border-bottom: 1px solid hsl(41.8, 99%, 60.2%);
-  padding: 0.9375rem 0;
-  font-size: 1.25rem;
   align-items: center;
+  font-size: 1.25rem;
+  padding: 0.9375rem 0;
+  min-height: 6.25rem;
+  width: 100%;
+  border-bottom: 1px solid hsl(41.8, 99%, 60.2%);
 `;
 
 export const ImageContainer = styled.div`
-  width: 23%;
   padding-right: 0.9375rem;
+  width: 23%;
 
   img {
     width: 100%;
@@ -21,8 +21,8 @@ export const ImageContainer = styled.div`
 `;
 
 export const BaseSpan = styled.span`
-  width: 23%;
   color: hsl(33.1, 89.5%, 44.9%);
+  width: 23%;
 `;
 
 export const Quantity = styled(BaseSpan)`
@@ -38,7 +38,7 @@ export const Value = styled.span`
 `;
 
 export const RemoveButton = styled.div`
-  padding-left: 0.75rem;
   color: hsl(33.1, 89.5%, 44.9%);
+  padding-left: 0.75rem;
   cursor: pointer;
 `;
