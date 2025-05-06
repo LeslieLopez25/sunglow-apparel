@@ -13,6 +13,7 @@ export enum BUTTON_TYPE_CLASSES {
   inverted = "inverted",
 }
 
+// Enum to define the available button styles variants
 const getButton = (buttonType = BUTTON_TYPE_CLASSES.base): typeof BaseButton =>
   ({
     [BUTTON_TYPE_CLASSES.base]: BaseButton,
@@ -20,11 +21,13 @@ const getButton = (buttonType = BUTTON_TYPE_CLASSES.base): typeof BaseButton =>
     [BUTTON_TYPE_CLASSES.inverted]: InvertedButton,
   }[buttonType]);
 
+// ButtonsProps defines the props accepted by the Button component
 export type ButtonProps = {
   buttonType?: BUTTON_TYPE_CLASSES;
   isLoading?: boolean;
 } & ButtonHTMLAttributes<HTMLButtonElement>;
 
+// Functional component definition
 const Button: FC<ButtonProps> = ({
   children,
   buttonType,
