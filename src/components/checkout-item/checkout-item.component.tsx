@@ -24,6 +24,8 @@ type CheckoutItemProps = {
   cartItem: CartItem;
 };
 
+// Displays an individual cart item in the checkout page with the ability to:
+// increment or decrement its quantity and remove it entirely from the cart
 const CheckoutItem: FC<CheckoutItemProps> = ({ cartItem }) => {
   const { name, imageUrl, price, quantity } = cartItem;
   const dispatch = useDispatch();
