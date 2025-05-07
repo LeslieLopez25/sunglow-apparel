@@ -15,6 +15,7 @@ type CategoryPreviewProps = {
   products: CategoryItem[];
 };
 
+// Renders a preview of a product category with a title and up to 4 product cards
 const CategoryPreview: FC<CategoryPreviewProps> = ({ title, products }) => {
   return (
     <CategoryPreviewContainer>
