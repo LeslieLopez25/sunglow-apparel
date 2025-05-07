@@ -11,6 +11,7 @@ export type DirectoryCategory = {
   route: string;
 };
 
+// Static list of product categories used to populate the homepage directory
 const categories: DirectoryCategory[] = [
   {
     id: 1,
@@ -49,6 +50,7 @@ const categories: DirectoryCategory[] = [
   },
 ];
 
+// Renders the homepage category directory using static category data
 const Directory = () => {
   return (
     <DirectoryContainer>
