@@ -11,7 +11,9 @@ import {
   CartItems,
 } from "./cart-dropdown.styles";
 
+// Functional component to render the cart dropdown
 const CartDropdown = () => {
+  // Get teh current cart items from Redux
   const cartItems = useSelector(selectCartItems);
   const navigate = useNavigate();
 
