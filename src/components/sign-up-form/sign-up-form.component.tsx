@@ -24,6 +24,7 @@ const SignUpForm = () => {
     setFormFields(defaultFormFields);
   };
 
+  // Handles form submission and dispatch a sign-up action if validation passes
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
@@ -44,6 +45,7 @@ const SignUpForm = () => {
     }
   };
 
+  // Updates form field state as the user types into input
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
 
