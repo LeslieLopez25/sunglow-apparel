@@ -23,6 +23,7 @@ const ProductCard: FC<ProductCardProps> = ({ product }) => {
   const dispatch = useDispatch();
   const cartItems = useSelector(selectCartItems);
 
+  // Adds the current product to the cart when the button is clicked
   const addProductToCart = () => dispatch(addItemToCart(cartItems, product));
 
   return (
