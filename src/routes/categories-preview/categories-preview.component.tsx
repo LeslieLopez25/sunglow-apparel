@@ -13,6 +13,7 @@ const CategoriesPreview = () => {
   const categoriesMap = useSelector(selectCategoriesMap);
   const isLoading = useSelector(selectCategoriesIsLoading);
 
+  // Displays a spinner while categories are loading, once loaded, displays a preview of each category
   return (
     <Fragment>
       {isLoading ? (
