@@ -11,10 +11,12 @@ import { BUTTON_TYPE_CLASSES } from "../button/button.component";
 
 import { PaymentButton, PaymentFormContainer } from "./payment-form.styles";
 
+// Type guard to ensure card element is valid before using it
 const ifValidCardElement = (
   card: StripeCardElement | null
 ): card is StripeCardElement => card !== null;
 
+// Handles payment processing using Stripe when the form submitted
 const PaymentForm = () => {
   const stripe = useStripe();
   const elements = useElements();
@@ -28,6 +30,8 @@ const PaymentForm = () => {
       return;
     }
     setIsProcessingPayment(true);
+
+    // Create payment intent on the backend
     const response = await fetch("/.netlify/functions/create-payment-intent", {
       method: "post",
       headers: {
@@ -44,6 +48,7 @@ const PaymentForm = () => {
 
     if (!ifValidCardElement(cardDetails)) return;
 
+    // Confirm payment with Stripe using card details and client secret
     const paymentResult = await stripe.confirmCardPayment(clientSecret, {
       payment_method: {
         card: cardDetails,
