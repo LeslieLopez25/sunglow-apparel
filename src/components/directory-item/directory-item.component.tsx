@@ -13,6 +13,7 @@ type DirectoryItemProps = {
   category: DirectoryCategory;
 };
 
+// Functional component that renders a single directory item (e.g., "Hats")
 const DirectoryItem: FC<DirectoryItemProps> = ({ category }) => {
   const { imageUrl, title, route } = category;
   const navigate = useNavigate();
