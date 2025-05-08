@@ -28,6 +28,7 @@ const SignInForm = () => {
     dispatch(googleSignInStart());
   };
 
+  // Handles the form submission and dispatches email/password sign-in
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
@@ -39,6 +40,7 @@ const SignInForm = () => {
     }
   };
 
+  // Updates form field state as the user types into inputs
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
 
