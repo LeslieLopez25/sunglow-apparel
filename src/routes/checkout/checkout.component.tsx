@@ -19,6 +19,8 @@ const Checkout = () => {
   const cartItems = useSelector(selectCartItems);
   const cartTotal = useSelector(selectCartTotal);
 
+  // Renders the checkout page with a list of items, their total cost,
+  // and a form to handle payment
   return (
     <CheckoutContainer>
       <CheckoutHeader>
