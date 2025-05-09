@@ -24,10 +24,12 @@ const Category = () => {
   const isLoading = useSelector(selectCategoriesIsLoading);
   const [products, setProducts] = useState(categoriesMap[category]);
 
+  // Updates local product list whenever the selected category or categories map changes
   useEffect(() => {
     setProducts(categoriesMap[category]);
   }, [category, categoriesMap]);
 
+  // Renders the category title and all products in that category, or a spinner while loading
   return (
     <Fragment>
       <Title>{category.toUpperCase()}</Title>
