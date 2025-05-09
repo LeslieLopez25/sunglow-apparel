@@ -25,6 +25,8 @@ const Navigation = () => {
 
   const signOutUser = () => dispatch(signOutStart());
 
+  // Renders the navigation bar with logo, sign-in/out, and cart UI.
+  // Uses <Outlet /> to render child routes.
   return (
     <Fragment>
       <NavigationContainer>
