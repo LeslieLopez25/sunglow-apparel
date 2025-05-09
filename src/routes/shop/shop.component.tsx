@@ -9,10 +9,14 @@ import { fetchCategoriesStart } from "../../store/categories/category.action";
 const Shop = () => {
   const dispatch = useDispatch();
 
+  // Fetches product categories from the backend when the component mounts
   useEffect(() => {
     dispatch(fetchCategoriesStart());
   }, []);
 
+  // Sets up routing for the shop page:
+  // - Default route shows all category previews
+  // - Dynamic route shows a specific category page
   return (
     <Routes>
       <Route index element={<CategoriesPreview />} />
