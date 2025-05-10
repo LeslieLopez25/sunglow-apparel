@@ -8,18 +8,21 @@ import {
   fetchCategoriesFailed,
 } from "./category.action";
 
+// Defines the shape of the categories state in the Redux store
 export type CategoriesState = {
   readonly categories: Category[];
   readonly isLoading: boolean;
   readonly error: Error | null;
 };
 
+// Initial state of the categories slice
 export const CATEGORIES_INITIAL_STATE: CategoriesState = {
   categories: [],
   isLoading: false,
   error: null,
 };
 
+// Reducer function to manage the categories state based on dispatched actions
 export const categoriesReducer = (
   state = CATEGORIES_INITIAL_STATE,
   action = {} as AnyAction
