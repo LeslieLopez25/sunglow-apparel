@@ -6,6 +6,7 @@ import {
 } from "../../utils/reducer/reducer.utils";
 import { CategoryItem } from "../categories/category.types";
 
+// Helper function to add a product to the cart
 const addCartItem = (
   cartItems: CartItem[],
   productToAdd: CategoryItem
@@ -25,6 +26,7 @@ const addCartItem = (
   return [...cartItems, { ...productToAdd, quantity: 1 }];
 };
 
+// Helper function to remove a product from the cart
 const removeCartItem = (
   cartItems: CartItem[],
   cartItemToRemove: CategoryItem
@@ -44,9 +46,11 @@ const removeCartItem = (
   );
 };
 
+// Helper function to remove an item from the cart entirely
 const clearCartItem = (cartItems: CartItem[], cartItemToClear: CartItem) =>
   cartItems.filter((cartItem) => cartItem.id !== cartItemToClear.id);
 
+// Action type definitions for setting cart state
 export type SetCartIsOpen = ActionWithPayload<
   CART_ACTION_TYPES.SET_IS_CART_OPEN,
   boolean
@@ -57,14 +61,17 @@ export type SetCartItems = ActionWithPayload<
   CartItem[]
 >;
 
+// Action creator to set whether the cart is open or closed
 export const setIsCartOpen = withMatcher((boolean: boolean) =>
   createAction(CART_ACTION_TYPES.SET_IS_CART_OPEN, boolean)
 );
 
+// Action creator to set the entire list of cart items
 export const setCartItems = withMatcher((cartItems: CartItem[]) =>
   createAction(CART_ACTION_TYPES.SET_CART_ITEMS, cartItems)
 );
 
+// Action creator to handle adding an item to the cart
 export const addItemToCart = (
   cartItems: CartItem[],
   productToAdd: CategoryItem
@@ -73,6 +80,7 @@ export const addItemToCart = (
   return setCartItems(newCartItems);
 };
 
+// Action creator to handle removing an item from the cart
 export const removeItemFromCart = (
   cartItems: CartItem[],
   cartItemToRemove: CartItem
@@ -81,6 +89,7 @@ export const removeItemFromCart = (
   return setCartItems(newCartItems);
 };
 
+// Action creator to handle clearing an item from the cart
 export const clearItemFromCart = (
   cartItems: CartItem[],
   cartItemToClear: CartItem
