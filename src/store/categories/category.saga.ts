@@ -9,6 +9,7 @@ import {
 
 import { CATEGORIES_ACTION_TYPES } from "./category.types";
 
+// Worker saga: Fetches categories from Firebase and dispatches success or failure
 export function* fetchCategoriesAsync() {
   try {
     const categoriesArray = yield* call(getCategoriesAndDocuments);
@@ -18,6 +19,7 @@ export function* fetchCategoriesAsync() {
   }
 }
 
+// Watcher saga: Listens for FETCH_CATEGORIES_START and triggers the worker
 export function* onFetchCategories() {
   yield takeLatest(
     CATEGORIES_ACTION_TYPES.FETCH_CATEGORIES_START,
@@ -25,6 +27,7 @@ export function* onFetchCategories() {
   );
 }
 
+// Root saga for categories: Initializes all category-related sagas
 export function* categoriesSaga() {
   yield all([call(onFetchCategories)]);
 }
