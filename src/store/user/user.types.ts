@@ -1,3 +1,4 @@
+// Enum of all user-related action types used across actions, reducers, and sagas
 export enum USER_ACTION_TYPES {
   SET_CURRENT_USER = "user/SET_CURRENT_USER",
   CHECK_USER_SESSION = "user/CHECK_USER_SESSION",
