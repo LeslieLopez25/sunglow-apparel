@@ -1,3 +1,4 @@
+// Configures the Redux store with middleware, persistence, and sagas
 import {
   compose,
   legacy_createStore as createStore,
