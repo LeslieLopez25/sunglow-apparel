@@ -25,6 +25,7 @@ import {
   AdditionalInformation,
 } from "../../utils/firebase/firebase.utils";
 
+// Handles fetching the user data from Firebase and dispatching sign-in success
 export function* getSnapshotFromUserAuth(
   userAuth: User,
   additionalDetails?: AdditionalInformation
@@ -46,6 +47,7 @@ export function* getSnapshotFromUserAuth(
   }
 }
 
+// Handles sign-in flow using Google popup
 export function* signInWithGoogle() {
   try {
     const { user } = yield* call(signInWithGooglePopup);
@@ -55,6 +57,7 @@ export function* signInWithGoogle() {
   }
 }
 
+// Handles sign-in flow using email and password
 export function* signInWithEmail({
   payload: { email, password },
 }: EmailSignInStart) {
@@ -74,6 +77,7 @@ export function* signInWithEmail({
   }
 }
 
+// Checks if the user is already authenticated (e.g. on refresh)
 export function* isUserAuthenticated() {
   try {
     const userAuth = yield* call(getCurrentUser);
@@ -84,6 +88,7 @@ export function* isUserAuthenticated() {
   }
 }
 
+// Handles the sign-up flow and dispatches signUpSuccess
 export function* signUp({
   payload: { email, password, displayName },
 }: SignUpStart) {
@@ -103,6 +108,7 @@ export function* signUp({
   }
 }
 
+// Handles the sign-out flow
 export function* signOut() {
   try {
     yield* call(signOutUser);
@@ -112,36 +118,44 @@ export function* signOut() {
   }
 }
 
+// Automatically signs the user in after successful sign-up
 export function* signInAfterSignUp({
   payload: { user, additionalDetails },
 }: SignUpSuccess) {
   yield* call(getSnapshotFromUserAuth, user, additionalDetails);
 }
 
+// Listens for GOOGLE_SIGN_IN_START action
 export function* onGoogleSignInStart() {
   yield* takeLatest(USER_ACTION_TYPES.GOOGLE_SIGN_IN_START, signInWithGoogle);
 }
 
+// Listens for CHECK_USER_SESSION action
 export function* onCheckUserSession() {
   yield* takeLatest(USER_ACTION_TYPES.CHECK_USER_SESSION, isUserAuthenticated);
 }
 
+// Listens for EMAIL_SIGN_IN_START action
 export function* onEmailSignInStart() {
   yield* takeLatest(USER_ACTION_TYPES.EMAIL_SIGN_IN_START, signInWithEmail);
 }
 
+// Listens for SIGN_UP_START action
 export function* onSignUpStart() {
   yield* takeLatest(USER_ACTION_TYPES.SIGN_UP_START, signUp);
 }
 
+// Listens for SIGN_UP_SUCCESS action and signs in the user
 export function* onSignUpSuccess() {
   yield* takeLatest(USER_ACTION_TYPES.SIGN_UP_SUCCESS, signInAfterSignUp);
 }
 
+// Listens for SIGN_OUT_START action
 export function* onSignOutStart() {
   yield* takeLatest(USER_ACTION_TYPES.SIGN_OUT_START, signOut);
 }
 
+// Combines all user sagas into one entry point for the saga middleware
 export function* userSagas() {
   yield* all([
     call(onCheckUserSession),
