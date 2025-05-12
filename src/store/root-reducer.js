@@ -1,3 +1,4 @@
+// Combines all individual reducers into a single root reducer for the Redux store
 import { combineReducers } from "redux";
 
 import { userReducer } from "./user/user.reducer";
