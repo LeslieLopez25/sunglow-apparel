@@ -1,3 +1,4 @@
+// Initializes Firebase and provides utility functions for auth and Firebase database operations
 import { initializeApp } from "firebase/app";
 import {
   getAuth,
@@ -35,6 +36,7 @@ const firebaseConfig = {
 
 const firebaseApp = initializeApp(firebaseConfig);
 
+// Google provider setup
 const googleProvider = new GoogleAuthProvider();
 
 googleProvider.setCustomParameters({
@@ -49,6 +51,7 @@ export const signInWithGoogleRedirect = () =>
 
 export const db = getFirestore();
 
+// Batch add documents to a collection in Firestone
 type ObjectToAdd = {
   title: string;
 };
@@ -69,6 +72,7 @@ export const addCollectionAndDocuments = async <T extends ObjectToAdd>(
   console.log("done");
 };
 
+// Retrieve all category documents from Firestone
 type CategoryItem = {
   id: number;
   imageUrl: string;
@@ -92,6 +96,7 @@ export const getCategoriesAndDocuments = async (): Promise<CategoryData[]> => {
   );
 };
 
+// User creation and authentication helpers
 export type AdditionalInformation = {
   displayName?: string;
 };
@@ -151,6 +156,7 @@ export const signInAuthUserWithEmailAndPassword = async (
 
 export const signOutUser = async (): Promise<void> => await signOut(auth);
 
+// Auth state listener and session utility
 export const onAuthStateChangedListener = (callback: NextOrObserver<User>) =>
   onAuthStateChanged(auth, callback);
 
