@@ -1,3 +1,5 @@
+// Wraps <App />> with Redux, Redux-Persist, React Router, and Stripe providers
+// Registers a service worker for offline capabilities
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
