@@ -49,4 +49,5 @@ export const NavLinks = styled.div`
 export const NavLink = styled(Link)`
   padding: 0.625rem 0.9375rem;
   cursor: pointer;
+  color: hsl(41.8, 99%, 60.2%);
 `;
